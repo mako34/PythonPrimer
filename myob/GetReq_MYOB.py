@@ -3,6 +3,7 @@
 import sys
 import requests
 import base64
+#import json
  
 def main():
     # parse command line options
@@ -28,15 +29,24 @@ def main():
   	headers={"x-myobapi-cftoken":encoded});
 
     #nota los headers! con usuario y contrasenia!
+#    print("----///////CONTENT/////////////////////--------")
+#ojo no necesario para mi mensaje!, este es como generado css? html? ver!
+    #print (r.content)
 
-    print (r.content)
 
-    print("------------")
+
+    print("------///////////////////DATA------")
 
     #parse to json!
     data = r.json()
 
-    print (data)
+    
+
+#eres una chimba! ya lo jsoneo!!! y de que manera!!!
+
+    print (data["Items"] [0])
+
+    #la arreglo!
 
 
 if __name__ == "__main__":
