@@ -14,7 +14,10 @@ def timesfour(input):
     
 # define a class
 class Piano:
+
+    #el init del piano!
     def __init__(self):
+        print("init de piano")
         self.type = raw_input("What type of piano? ")
         self.height = raw_input("What height (in feet)? ")
         self.price = raw_input("How much did it cost? ")
