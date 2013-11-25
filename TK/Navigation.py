@@ -8,7 +8,7 @@ import tkinter
 import tkinter.ttk
 
 def create_widgets_in_first_frame():
-    # Create the label for the frame
+    # Create the label for the frameN
     first_window_label = tkinter.ttk.Label(first_frame, text='Window 1')
     first_window_label.grid(column=0, row=0, pady=10, padx=10, sticky=(tkinter.N))
 
